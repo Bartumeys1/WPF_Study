@@ -19,6 +19,7 @@ using ClassWork02.Data.Models;
 
 namespace ClassWork02
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using ClassWork02.Data.Models;
 
 namespace ClassWork02
 {
@@ -18,4 +19,5 @@ namespace ClassWork02
         static string folder = Directory.GetCurrentDirectory();
         public static string dbPath = Path.Combine(folder, dbName);
     }
+
 }

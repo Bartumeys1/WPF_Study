@@ -9,15 +9,34 @@
     <Grid>
         <StackPanel Margin="10">
             <Button Content="New contact" 
+                    Height="25"
+                    FontSize="15"
                     x:Name="newContactBtn"
                     Click="newContactBtn_Click"
              />
-            <TextBox x:Name="serchTextBox" Margin="0 5" TextChanged="TextBox_TextChanged"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.1*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Search : " FontSize="15" HorizontalAlignment="Right" Margin="0 7"/>
+                <TextBox x:Name="serchTextBox" Margin="5,5,0,0" Height="25" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+            </Grid>
             <ListView x:Name="contactsListView"
                       Height="365" 
                       Margin="0 5 0 0"
+                      FontSize="15"
                       MouseDoubleClick="contactsListView_MouseDoubleClick">
-                <ListView.ItemTemplate >
+                <ListView.View>
+                    <GridView >
+                        <GridView.Columns>
+                            <GridViewColumn Width="300" Header="Name" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                            <GridViewColumn Width="240" Header="Email" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
+                            <GridViewColumn Width="240" Header="Phone" DisplayMemberBinding="{Binding Phone}"></GridViewColumn>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+                <!--<ListView.ItemTemplate >
                     <DataTemplate>
                         <StackPanel>
                             <TextBlock Text="{Binding Name}" FontSize="15" FontWeight="Bold"/>
@@ -26,10 +45,10 @@
                             
                         </StackPanel>
                     </DataTemplate>
-                </ListView.ItemTemplate>
+                </ListView.ItemTemplate>-->
             </ListView>
-            
-            
+
+
         </StackPanel>
     </Grid>
 </Window>
