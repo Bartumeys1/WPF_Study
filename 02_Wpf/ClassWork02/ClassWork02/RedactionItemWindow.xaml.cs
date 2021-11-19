@@ -51,15 +51,24 @@ namespace ClassWork02
         {
             using (SQLiteConnection connection = new SQLiteConnection(App.dbPath))
             {
-                connection.Delete(contact);
+               // connection.Delete(contact);
 
                 contact.Name = nameTextBox.Text;
                 contact.Email = emailTextBox.Text;
                 contact.Phone = phoneTextBox.Text;
-                connection.Insert(contact);
+                connection.Update(contact);
             }
             Close();
 
+        }
+
+        private void deleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(App.dbPath))
+            {
+                connection.Delete(contact);
+            }
+            Close();
         }
     }
 }
