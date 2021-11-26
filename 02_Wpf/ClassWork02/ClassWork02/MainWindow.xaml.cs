@@ -30,7 +30,11 @@ namespace ClassWork02
         {
             InitializeComponent();
             contacts = new List<Contact>();
+            AuthorizationWindow authorizationWindow = new AuthorizationWindow();
+            authorizationWindow.ShowDialog();
+
             GetContacts();
+
         }
 
         private void GetContacts()
@@ -41,6 +45,7 @@ namespace ClassWork02
                 contacts = connection.Table<Contact>().ToList();
                 if (contacts != null)
                 {
+                    contacts.Sort((i1, i2) => i1.Name.CompareTo(i2.Name));
                     contactsListView.ItemsSource = contacts;
                 }
             }

@@ -1,0 +1,82 @@
+﻿<Window x:Class="TextEditor.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditor.Views"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="350" Width="550">
+    <Grid Margin="2,30,2,55">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".4*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="1.3*" />
+
+
+        </Grid.RowDefinitions>
+
+        <Label Margin="2" Content="Login :"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="24"
+               FontWeight="Bold"
+               />
+
+        <Label Margin="2" Content="Password :"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="24"
+               FontWeight="Bold"
+               Grid.Row="1" 
+               />
+
+
+        <TextBox Margin="3,15,29,0" 
+                 x:Name="loginNameTextBox" 
+                 Padding="5"
+                 Height="45"
+                 Grid.Column="1"
+                 FontSize="20"
+                 VerticalAlignment="Top"
+                 />
+        <TextBox Margin="3,0,29,0" 
+                 x:Name="passwordTextBox" 
+                 Padding="5"
+                 Height="45"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 />
+
+
+        <Button Content="Login" 
+                x:Name="loginBtn"
+                Click="loginBtn_Click"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                FontSize="15"
+                Width="175"
+                Margin="0 20 200 0"
+
+        />
+        <Button Content="Registration" 
+                x:Name="registrateBtn"
+                Click="registrateBtn_Click"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                FontSize="15"
+                Width="175"
+                Margin="200 20 0 0"
+        />
+
+    </Grid>
+</Window>

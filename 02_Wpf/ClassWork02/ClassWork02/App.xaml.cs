@@ -16,8 +16,10 @@ namespace ClassWork02
     public partial class App : Application
     {
         static string dbName = "Database.db";
+        static string dbLogin = "DatabasePassword.db";
         static string folder = Directory.GetCurrentDirectory();
         public static string dbPath = Path.Combine(folder, dbName);
+        public static string dbPathLogin = Path.Combine(folder, dbLogin);
     }
 
 }

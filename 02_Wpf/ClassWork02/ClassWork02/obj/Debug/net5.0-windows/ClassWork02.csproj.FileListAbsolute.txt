@@ -43,3 +43,5 @@ D:\SHAG_Home\WPF\02_Wpf\ClassWork02\ClassWork02\obj\Debug\net5.0-windows\CreateN
 D:\SHAG_Home\WPF\02_Wpf\ClassWork02\ClassWork02\obj\Debug\net5.0-windows\CreateNewWindow.baml
 D:\SHAG_Home\WPF\02_Wpf\ClassWork02\ClassWork02\obj\Debug\net5.0-windows\RedactionItemWindow.g.cs
 D:\SHAG_Home\WPF\02_Wpf\ClassWork02\ClassWork02\obj\Debug\net5.0-windows\RedactionItemWindow.baml
+D:\SHAG_Home\WPF\02_Wpf\ClassWork02\ClassWork02\obj\Debug\net5.0-windows\AuthorizationWindow.g.cs
+D:\SHAG_Home\WPF\02_Wpf\ClassWork02\ClassWork02\obj\Debug\net5.0-windows\AuthorizationWindow.baml
