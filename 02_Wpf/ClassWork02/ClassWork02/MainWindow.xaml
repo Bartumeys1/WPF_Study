@@ -33,7 +33,7 @@
                     <GridView >
                         <GridView.Columns>
                             <GridViewColumn Width="300" Header="Name" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
-                            <GridViewColumn Width="240" Header="Email" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
+                            <GridViewColumn Width="240" Header="Priority" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
                             <GridViewColumn Width="240" Header="Phone" DisplayMemberBinding="{Binding Phone}"></GridViewColumn>
                         </GridView.Columns>
                     </GridView>
